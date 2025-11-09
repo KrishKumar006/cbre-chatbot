@@ -1,0 +1,53 @@
+🏢 CBRE AI Chatbot - Setup & Run Guide
+A local AI-powered chatbot for CBRE commercial real estate information. Runs completely free on your computer with no API costs!
+
+📋 Prerequisites
+
+Python 3.12 (already installed ✅)
+Windows 10/11
+Internet connection (only for first-time setup to download models)
+
+
+🚀 Quick Start (First Time Setup)
+Step 1: Install Dependencies
+Open Command Prompt or PowerShell and navigate to the backend folder:
+bash
+                     cd C:\Users\krish\Documents\GitHub\CBRE\backend
+Activate your virtual environment:
+bash
+                     ..\venv\Scripts\activate
+Install required packages:
+bash
+                     pip install -r requirements.txt
+                      pip install sentence-transformers chromadb
+Step 2: Load Data into Database
+Run the data ingestion script (only needs to be done once):
+bashpython ingest_data.py
+You should see:
+📚 Starting data ingestion...
+🔄 Loading embedding model...
+✅ Model loaded!
+✍️  Creating documents...
+✂️  Splitting into chunks...
+📤 Uploading to database...
+✅ Success! Added 12 chunks to database
+🎉 Data ingestion complete!
+Step 3: Start the Backend Server
+bashpython main.py
+You should see:
+🚀 CBRE Chatbot API Starting (FREE LOCAL MODE)
+📍 API: http://localhost:8000
+📖 Docs: http://localhost:8000/docs
+💾 Database: ✅ Ready
+💰 Cost: $0.00 (Running locally!)
+✅ Backend is now running! Keep this terminal window open.
+Step 4: Open the Chat Interface
+
+Navigate to the frontend folder
+Double-click chat.html
+
+Or right-click → Open with → Your preferred browser
+
+
+
+✅ You're all set! Start chatting with your CBRE AI assistant!
