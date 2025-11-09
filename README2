@@ -41,6 +41,9 @@ You should see:
 💾 Database: ✅ Ready
 💰 Cost: $0.00 (Running locally!)
 ✅ Backend is now running! Keep this terminal window open.
+
+also run: python main.py
+
 Step 4: Open the Chat Interface
 
 Navigate to the frontend folder
